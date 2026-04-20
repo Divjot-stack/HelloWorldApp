@@ -1,6 +1,20 @@
 public class HelloApp {
     public static void main(String[] args) {
-		String name = args[0];
-		System.out.println("Hello, " + name + "!");
+
+        if (args.length == 0) {
+            System.out.println("Hello, World!");
+        } else {
+
+            StringBuilder nameBuilder = new StringBuilder();
+
+            for (String name : args) {
+                nameBuilder.append(name).append(", ");
+            }
+
+            String names = nameBuilder.substring(0, nameBuilder.length() - 2);
+
+            System.out.println("Hello, " + names + "!");
+        }
+
     }
 }
