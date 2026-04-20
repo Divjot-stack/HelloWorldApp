@@ -1,3 +1,4 @@
 # HelloWorldApp
-The app accepts a user's name as a command-line argument and displays a personalized greeting. This enhances the basic functionality of UC1 by allowing user input to customize the output.
+The app accepts a user's name as a command-line argument and displays a personalized greeting. If no name is provided, it defaults to "World". This use case combines the basic functionality from UC1 with the personalization from UC2, adding robustness through default handling.
+
 
